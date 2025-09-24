@@ -1,102 +1,180 @@
 # Campus Course & Records Manager (CCRM)
 
-Yo, this is my Java project for class! It’s a console app called CCRM to manage students, courses, grades, and backups for a campus. Built with Java SE, it uses OOP, NIO.2, streams, and more. Code’s organized into packages and runs locally.
+## 📌 Project Overview
 
-## Project Overview
+The **Campus Course & Records Manager (CCRM)** is a **console-based Java
+SE application** to help institutes manage:\
+- **Students** (add, update, enroll/unenroll in courses, view
+transcript)\
+- **Courses** (create, list, update, search/filter by
+department/instructor/semester)\
+- **Enrollment & Grading** (enroll students, record marks, compute GPA,
+generate transcripts)\
+- **File Utilities** (import/export CSV data, backup archives, recursive
+utilities)
 
-The app lets you:
-- Add/update/list/deactivate students and courses.
-- Enroll/unenroll students with credit limits.
-- Record grades, compute GPA, and print transcripts.
-- Import/export CSV data and create timestamped backups.
+It demonstrates **OOP principles**, modern **Java SE APIs (NIO.2,
+Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
 
-It shows off OOP (encapsulation, inheritance, etc.), exception handling, lambdas, enums, and design patterns (Singleton, Builder). Check the code for the full scoop!
+------------------------------------------------------------------------
 
-## How to Run
+## ▶️ How to Run
 
-### Requirements
-- JDK 21 (used for this project).
-- Eclipse IDE (optional but handy).
+1.  Install **JDK 17+**.\
 
-### Command Line
-1. Clone: `git clone <repo-url>`
-2. Navigate: `cd src`
-3. Compile: `javac edu/ccrm/cli/Main.java`
-4. Run: `java edu.ccrm.cli.Main`
+2.  Clone this repository:
 
-### Eclipse
-- Import as Java project.
-- Run `edu.ccrm.cli.Main`.
+    ``` bash
+    git clone <repo-link>
+    cd CampusCourseRecordsManager
+    ```
 
-Menu pops up on start—use numbers to navigate.
+3.  Compile and run:
 
-## Evolution of Java
+    ``` bash
+    javac -d bin src/**/*.java
+    java -cp bin edu.ccrm.cli.Main
+    ```
 
-- 1995: Java 1.0 released.
-- 2004: Java 5 adds generics, enums.
-- 2014: Java 8 brings lambdas, streams.
-- 2017: Java 9 introduces modules.
+4.  Alternatively, import into **Eclipse IDE** → *New Java Project* →
+    *Run as Java Application*.
 
-## Java Editions Comparison
+------------------------------------------------------------------------
 
-- **Java ME**: For small devices (e.g., old phones), limited APIs.
-- **Java SE**: Core for desktop apps (used here), includes NIO, streams.
-- **Java EE**: For enterprise apps (e.g., web servers), adds servlets.
+## 🛠️ Evolution of Java (Quick Timeline)
 
-## Java Architecture: JDK, JRE, JVM
+-   **1995** -- Java 1.0 released (Sun Microsystems).\
+-   **2004** -- Java 5: Generics, Enums, Annotations.\
+-   **2011** -- Java 7: NIO.2, try-with-resources.\
+-   **2014** -- Java 8: Lambdas, Streams, Date/Time API.\
+-   **2017+** -- Java 9--17: Modules, var, records, pattern matching,
+    modern APIs.
 
-- **JVM**: Runs bytecode, handles memory.
-- **JRE**: JVM + core libraries to run apps.
-- **JDK**: JRE + tools (javac) to write code.
-- Interaction: Write .java, compile to .class, JVM runs it.
+------------------------------------------------------------------------
 
-## Installing Java on Windows
+## ⚖️ Java Editions Comparison
 
-1. Download JDK 21 from https://adoptium.net/.
-2. Run .msi installer.
-3. Add to PATH: `C:\Program Files\Eclipse Adoptium\jdk-21\bin`.
-4. Verify: `java -version`.
+  -----------------------------------------------------------------------
+  Edition              Purpose              Example Use
+  -------------------- -------------------- -----------------------------
+  **Java ME**          Mobile/embedded      Feature phones, IoT
+                       devices              
 
-![JDK Verification](screenshots/jdk-verification.png)
+  **Java SE**          Standard desktop     This project (console app)
+                       apps, core libraries 
 
-## Eclipse Setup
+  **Java EE (Jakarta   Enterprise, web,     Banking, e-commerce systems
+  EE)**                distributed apps     
+  -----------------------------------------------------------------------
 
-1. Download from https://www.eclipse.org/downloads/.
-2. Select "Java Developers" edition.
-3. New Java Project: "CCRM", run `edu.ccrm.cli.Main`.
+------------------------------------------------------------------------
 
-![Eclipse Setup](screenshots/eclipse-setup.png)
+## 🏗️ Java Architecture (JDK vs JRE vs JVM)
 
-## Syllabus Mapping
+-   **JDK (Java Development Kit)** -- tools + compiler + JRE.\
+-   **JRE (Java Runtime Environment)** -- runtime libraries + JVM.\
+-   **JVM (Java Virtual Machine)** -- executes bytecode on any platform.
 
-| Topic                  | Location                     |
-|------------------------|------------------------------|
-| Primitive variables    | `edu.ccrm.domain.Student`    |
-| Decision structures    | `edu.ccrm.cli.Menu`          |
-| Loops                  | `edu.ccrm.service.StudentService` |
-| Encapsulation          | `edu.ccrm.domain.Student`    |
-| Inheritance            | `edu.ccrm.domain.Person`     |
-| Singleton              | `edu.ccrm.config.AppConfig`  |
-| Exceptions             | Custom exceptions in services |
+Flow: **Source Code → Compiler → Bytecode → JVM → Machine Execution**.
 
-## Enabling Assertions
+------------------------------------------------------------------------
 
-Use `java -ea edu.ccrm.cli.Main` for assertions (e.g., non-null checks).
+## 💻 Installation (Windows)
 
-## Usage
+1.  Download JDK from Oracle/OpenJDK.\
 
-### Sample Commands
-Menu options: 1. Manage Students, 2. Courses, etc.  
-Add student: Select 1, then 1, enter "123, REG001, John Doe, john@example.com".
+2.  Install & set `JAVA_HOME` in Environment Variables.\
 
-### Data Files
-See `test-data/students.csv` for import samples.
+3.  Verify:
 
-## Screenshots
-- JDK: screenshots/jdk-verification.png
-- Eclipse: screenshots/eclipse-setup.png
-- Menu: screenshots/program-menu.png
-- Backups: screenshots/backups-folder.png
+    ``` bash
+    java -version
+    ```
 
-## Acknowledgements
-All my work. Referenced Oracle Java docs and class notes—no LLMs!
+4.  **Eclipse IDE**:
+
+    -   File → New → Java Project → Add source folders (`src`) → Run
+        Main class.
+
+*(Screenshots included in `/screenshots` folder as per submission
+guidelines)*
+
+------------------------------------------------------------------------
+
+## 🧩 Mapping: Syllabus Topic → Project Files
+
+  -----------------------------------------------------------------------
+  Topic           Example Implementation
+  --------------- -------------------------------------------------------
+  Encapsulation   `Student` class with private fields + getters/setters
+
+  Inheritance     `Person` (abstract) → `Student`, `Instructor`
+
+  Abstraction     `Person` abstract methods
+
+  Polymorphism    `TranscriptService` interface with multiple impls
+
+  Interfaces      `Persistable`, `Searchable<T>`
+
+  Lambdas &       Filtering courses by instructor/semester
+  Streams         
+
+  Enums           `Semester`, `Grade`
+
+  Singleton       `AppConfig`
+
+  Builder         `Course.Builder`
+
+  Exception       `DuplicateEnrollmentException`,
+  Handling        `MaxCreditLimitExceededException`
+
+  File I/O        `ImportExportService`, `BackupService`
+  (NIO.2)         
+
+  Recursion       Backup size computation
+
+  Assertions      Non-null IDs, credit limits
+  -----------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+## 🧪 Usage (Sample Commands)
+
+-   **Add Student** → Enter details via CLI menu.\
+-   **Enroll Student** → Select student + course code.\
+-   **Record Grades** → Enter marks → GPA auto-computed.\
+-   **Export Data** → Creates CSV files in `/exports`.\
+-   **Backup** → Copies exports to `/backup/yyyyMMdd_HHmmss`.
+
+------------------------------------------------------------------------
+
+## 📝 Notes
+
+-   Enable assertions when running:
+
+    ``` bash
+    java -ea -cp bin edu.ccrm.cli.Main
+    ```
+
+-   Errors vs Exceptions explained in comments & README.\
+
+-   Includes both **checked & unchecked exceptions**.
+
+------------------------------------------------------------------------
+
+## 📂 Deliverables
+
+-   **Source Code** (with packages: `edu.ccrm.domain`,
+    `edu.ccrm.service`, `edu.ccrm.io`, etc.)\
+-   **README.md** (this file)\
+-   **Screenshots folder** (installation, Eclipse setup, program run,
+    exports/backups)\
+-   **Optional demo video link**\
+-   **Sample test-data CSVs**
+
+------------------------------------------------------------------------
+
+## 🙏 Acknowledgements
+
+This project was developed as part of the **Programming in Java**
+coursework. References: *Java Docs, Oracle Tutorials*.

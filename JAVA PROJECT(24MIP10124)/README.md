@@ -16,7 +16,7 @@ utilities)
 It demonstrates **OOP principles**, modern **Java SE APIs (NIO.2,
 Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
 
-------------------------------------------------------------------------
+
 
 ##  How to Run
 
@@ -39,7 +39,7 @@ Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
 4.  Alternatively, import into **Eclipse IDE** → *New Java Project* →
     *Run as Java Application*.
 
-------------------------------------------------------------------------
+
 
 ##  Evolution of Java (Quick Timeline)
 
@@ -50,7 +50,7 @@ Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
 -   **2017+** -- Java 9--17: Modules, var, records, pattern matching,
     modern APIs.
 
-------------------------------------------------------------------------
+
 
 ##  Java Editions Comparison
 
@@ -67,7 +67,7 @@ Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
   EE)**                distributed apps     
   -----------------------------------------------------------------------
 
-------------------------------------------------------------------------
+
 
 ##  Java Architecture (JDK vs JRE vs JVM)
 
@@ -77,7 +77,7 @@ Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
 
 Flow: **Source Code → Compiler → Bytecode → JVM → Machine Execution**.
 
-------------------------------------------------------------------------
+
 
 ##  Installation (Windows)
 
@@ -99,7 +99,7 @@ Flow: **Source Code → Compiler → Bytecode → JVM → Machine Execution**.
 *(Screenshots included in `/screenshots` folder as per submission
 guidelines)*
 
-------------------------------------------------------------------------
+
 
 ##  Mapping: Syllabus Topic → Project Files
 
@@ -136,7 +136,7 @@ guidelines)*
   Assertions      Non-null IDs, credit limits
   -----------------------------------------------------------------------
 
-------------------------------------------------------------------------
+
 
 ##  Usage (Sample Commands)
 
@@ -146,7 +146,7 @@ guidelines)*
 -   **Export Data** → Creates CSV files in `/exports`.\
 -   **Backup** → Copies exports to `/backup/yyyyMMdd_HHmmss`.
 
-------------------------------------------------------------------------
+
 
 ##  Notes
 
@@ -160,7 +160,7 @@ guidelines)*
 
 -   Includes both **checked & unchecked exceptions**.
 
-------------------------------------------------------------------------
+
 
 ##  Deliverables
 
@@ -172,10 +172,11 @@ guidelines)*
 -   **Optional demo video link**\
 -   **Sample test-data CSVs**
 
-------------------------------------------------------------------------
+
 
 ##  Acknowledgements
 
 This project was developed as part of the **Programming in Java**
 coursework. References: *Java Docs, Oracle Tutorials*.
+
 

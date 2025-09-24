@@ -1,6 +1,6 @@
 # Campus Course & Records Manager (CCRM)
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Campus Course & Records Manager (CCRM)** is a **console-based Java
 SE application** to help institutes manage:\
@@ -18,7 +18,7 @@ Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
 
 ------------------------------------------------------------------------
 
-## ▶️ How to Run
+##  How to Run
 
 1.  Install **JDK 17+**.\
 
@@ -41,7 +41,7 @@ Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
 
 ------------------------------------------------------------------------
 
-## 🛠️ Evolution of Java (Quick Timeline)
+##  Evolution of Java (Quick Timeline)
 
 -   **1995** -- Java 1.0 released (Sun Microsystems).\
 -   **2004** -- Java 5: Generics, Enums, Annotations.\
@@ -52,7 +52,7 @@ Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
 
 ------------------------------------------------------------------------
 
-## ⚖️ Java Editions Comparison
+##  Java Editions Comparison
 
   -----------------------------------------------------------------------
   Edition              Purpose              Example Use
@@ -68,7 +68,6 @@ Streams, Date/Time)**, and design patterns (**Singleton, Builder**).
   -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
-
 ## 🏗️ Java Architecture (JDK vs JRE vs JVM)
 
 -   **JDK (Java Development Kit)** -- tools + compiler + JRE.\
@@ -79,7 +78,7 @@ Flow: **Source Code → Compiler → Bytecode → JVM → Machine Execution**.
 
 ------------------------------------------------------------------------
 
-## 💻 Installation (Windows)
+##  Installation (Windows)
 
 1.  Download JDK from Oracle/OpenJDK.\
 
@@ -101,7 +100,7 @@ guidelines)*
 
 ------------------------------------------------------------------------
 
-## 🧩 Mapping: Syllabus Topic → Project Files
+##  Mapping: Syllabus Topic → Project Files
 
   -----------------------------------------------------------------------
   Topic           Example Implementation
@@ -138,7 +137,7 @@ guidelines)*
 
 ------------------------------------------------------------------------
 
-## 🧪 Usage (Sample Commands)
+##  Usage (Sample Commands)
 
 -   **Add Student** → Enter details via CLI menu.\
 -   **Enroll Student** → Select student + course code.\
@@ -148,7 +147,7 @@ guidelines)*
 
 ------------------------------------------------------------------------
 
-## 📝 Notes
+##  Notes
 
 -   Enable assertions when running:
 
@@ -162,7 +161,7 @@ guidelines)*
 
 ------------------------------------------------------------------------
 
-## 📂 Deliverables
+##  Deliverables
 
 -   **Source Code** (with packages: `edu.ccrm.domain`,
     `edu.ccrm.service`, `edu.ccrm.io`, etc.)\
@@ -174,7 +173,7 @@ guidelines)*
 
 ------------------------------------------------------------------------
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 This project was developed as part of the **Programming in Java**
 coursework. References: *Java Docs, Oracle Tutorials*.
